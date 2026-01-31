@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import logo from '../../assets/logo.png';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
                 {/* Logo */}
                 <div className="flex lg:flex-1">
                     <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-                        <img className="h-10 w-auto" src="/src/assets/logo.png" alt="MK Group Logo" />
+                        <img className="h-10 w-auto" src={logo} alt="MK Group Logo" />
                         <span className="font-bold text-xl tracking-tight text-black">MK Resin</span>
                     </Link>
                 </div>
