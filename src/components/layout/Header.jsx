@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
